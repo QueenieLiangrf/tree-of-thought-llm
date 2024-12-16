@@ -4,8 +4,7 @@ import backoff
 
 completion_tokens = prompt_tokens = 0
 
-# Initialize Groq Client
-client = Groq()
+client = Client(api_key="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")
 
 # Define a backoff decorator
 @backoff.on_exception(backoff.expo, Exception)  # Using generic Exception for Groq API
